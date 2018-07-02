@@ -1,0 +1,183 @@
+#Course{
+    background-size: cover;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+
+    .banner{
+        width: 100%;
+        height: 240px;
+        background-image: url("../../resource/image/image_1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .banner-bg{
+            background-color: rgba(0, 0, 0, .3);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .banner-left{
+                width: 300px;
+                justify-content:center;
+                display: flex;
+                flex-direction: column;
+
+                .banner-course-type{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 64px;
+                    padding-left: 20px;
+                }
+
+                .banner-course-name{
+                    color: white;
+                    font-size: 32px;
+                    padding-left: 20px;
+                }
+            }
+
+            .banner-right{
+                flex: 1;
+                flex-wrap: wrap;
+                display: flex;
+                margin: 60px 0;
+                flex-direction: row-reverse;
+
+                .banner-feature{
+                    box-sizing: border-box;
+                    padding: 12px;
+                    line-height: 20px;
+                    font-size: 24px;
+                    color: white;
+                    margin: auto 20px auto 0;
+                    border: 1px solid white;
+                    border-radius: 4px;
+                    height: 48px;
+                    transition: all 0.6s;
+                }
+
+                .banner-feature-warning{
+                    border-color: rgba(255, 170, 70, 1);
+                    color: rgba(255, 170, 70, 1);
+                }
+            }
+        }
+    }
+
+    .pool-list{
+        padding: 20px;
+
+        .pool-label{
+            border-left: 20px solid rgba(66, 129, 164, 1);
+            color: rgba(80, 80, 80, 1);
+            font-weight: bold;
+            padding-left: 10px;
+            font-size: 32px;
+        }
+
+        .pool-row{
+            display: flex;
+            font-size: 16px;
+            color: rgba(120, 120, 120, 1);
+            border-bottom: 2px dashed rgba(220, 220, 220, 1);
+            padding: 10px 0;
+
+            .pool-district{
+                text-align: center;
+            }
+
+            .pool-name{
+                width: 320px;
+                color: rgba(80, 80, 80, 1);
+                font-weight: bold;
+            }
+
+            .pool-address{
+                flex: 0.8;
+            }
+
+            .pool-line{
+                width: 60px;
+                color: white;
+
+                span{
+                    padding: 0 2px;
+                }
+
+                .line-1{
+                    background-color: rgba(255, 0, 0, 1);
+                }
+
+                .line-2{
+                    background-color: rgba(153, 204, 0, 1);
+                }
+
+                .line-4{
+                    background-color: rgba(78, 51, 153, 1);
+                }
+
+                .line-6{
+                    background-color: rgba(204, 0, 78, 1);
+                }
+
+                .line-7{
+                    background-color: rgba(255, 78, 51, 1);
+                }
+
+                .line-8{
+                    background-color: rgba(00, 153, 204, 1);
+                }
+            }
+
+            .pool-station{
+                flex: 0.8;
+            }
+        }
+    }
+
+    .delegate{
+        padding: 20px;
+
+        .delegate-label{
+            border-left: 20px solid rgba(255, 170, 70, 1);
+            color: rgba(80, 80, 80, 1);
+            font-weight: bold;
+            padding-left: 10px;
+            font-size: 32px;
+        }
+
+        .delegate-row{
+            display: flex;
+            padding: 10px 0;
+
+            .delegate-sub-title{
+                display: flex;
+                padding-left: 10px;
+                align-items: center;
+                width: 160px;
+                color: rgba(80, 80, 80, 1);
+                font-weight: bold;
+            }
+
+            .delegate-detail-list{
+                flex: 1;
+
+                .delegate-detail{
+                    color: rgba(120, 120, 120, 1);
+                    margin: 8px 0;
+                    padding-left: 4px;
+                    font-size: 14px;
+                    border-left: 2px solid rgba(255, 170, 70, 1);
+                }
+            }
+        }
+
+        .delegate-bg{
+            background-color: rgba(240, 240, 240, 1);
+        }
+    }
+}

@@ -1,0 +1,112 @@
+#CourseSearch{
+    background-image: url("../../resource/image/image_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 0px;
+    
+    .course-search-bg{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        opacity: 1;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .course-search-course-type-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .course-search-cell {
+                flex: 1;
+                color: white;
+                font-size: 28px;
+                line-height: 64px;
+                margin-right: 10px;
+                background-color: rgba(0, 0, 0, 0.3);
+                display: flex;
+                cursor: pointer;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+                transition: all 0.6s;
+                min-width: 180px;
+                max-width: 220px;
+
+                .course-search-cell-name{
+                    width: 100px;
+                    padding: 0 5px 0 5px;
+                    text-align: center;
+                    transition: all 0.6s;
+                }
+
+                .course-search-cell-feature{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    flex-wrap: wrap;
+                    padding: 4px 0;
+                    height: 56px;
+                    transition: all 0.6s;
+
+                    .course-search-feature-type{
+                        box-sizing: border-box;
+                        padding: 4px;
+                        line-height: 12px;
+                        font-size: 10px;
+                        color: white;
+                        margin: auto 8px auto 0;
+                        background-color: rgba(80, 120, 200, 1);
+                        border-radius: 4px;
+                        height: 20px;
+                        transition: all 0.6s;
+                    }
+                }
+            }
+
+            .course-search-cell:hover{
+                margin-top: -20px;
+                box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.8);
+
+                .course-search-cell-name{
+                    text-shadow: 1px 6px 6px black;
+                }
+
+                .course-search-cell-feature{
+                    margin-top: 12px;
+                }
+
+                .course-search-feature-type{
+                    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+            .course-search-cell-solo {
+                color: rgba(220, 210, 160, 1);
+            }
+
+            .course-search-cell-couple {
+                color: rgba(220, 210, 160, 1);
+            }
+
+            .course-search-cell-family {
+                color: rgba(220, 210, 160, 1);
+            }
+
+            .course-search-cell-girls {
+                color: rgba(220, 150, 180, 1);
+            }
+
+            .course-search-cell-ordinary {
+
+            }
+        }
+
+        .course-search-course-type-list :last-child{
+            margin-right: 0px;
+        }
+    }
+
+}

@@ -1,0 +1,45 @@
+#ToolBar{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(50, 40, 60, 1);
+    background: linear-gradient(to right, #283048, #859398);
+    padding: 0 10px;
+    box-sizing: border-box;
+    box-shadow: -2px 2px 4px #283048;
+    position: relative;
+    z-index: 99;
+
+    .tool-bar-logo{
+        height: 100%;
+
+        img {
+            padding: 12px 0;
+            box-sizing: border-box;
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .tool-bar-link-list{
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1;
+
+        .tool-bar-link{
+            font-size: 1.6rem;
+            align-items: center;
+            display: flex;
+            box-sizing: border-box;
+            height: 100%;
+            margin-right: 20px;
+            color: white;
+        }
+
+        .link-home{
+            background-color: #83a4d4;
+            padding: 0 10px;
+        }
+    }
+
+}
