@@ -17,6 +17,9 @@
     "babel-preset-env": "*",
     "babel-preset-react": "*",
     "babel-preset-stage-0": "*",
+    "babel-plugin-syntax-async-functions": "*",
+    "babel-plugin-transform-regenerator": "*",
+    "babel-polyfill": "*",
     "clean-webpack-plugin": "*",
     "css-loader": "*",
     "file-loader": "^1.1.11",
@@ -25,8 +28,6 @@
     "less": "*",
     "less-loader": "*",
     "open-browser-webpack-plugin": "*",
-    "react": "*",
-    "react-router-dom": "*",
     "style-loader": "*",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "url-loader": "^1.0.1",
@@ -35,10 +36,8 @@
     "webpack-dev-server": "*"
   },
   "dependencies": {
-    "babel-plugin-syntax-async-functions": "*",
-    "babel-plugin-transform-regenerator": "*",
-    "babel-polyfill": "*",
     "react": "*",
+    "react-dom": "*",
     "react-router-dom": "^4.2.2"
   }
 }

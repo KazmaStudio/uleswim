@@ -29,9 +29,9 @@ class Grid extends Component {
             </div>
             <div id = "GridPages" class = "grid-pages">
                 <Switch>
-                    <Route exact path='/' component={isPC()?Home:HomeMb}/>
-                    <Route path='/Recruiting' component={Recruiting}/>
-                    <Route path='/Course' component={Course}/>
+                    <Route exact path='/' component={ isPC()?Home:HomeMb }/>
+                    <Route path='/Recruiting' component={ Recruiting }/>
+                    <Route path='/Course' component={ Course }/>
                 </Switch>
             </div>
         </div>
