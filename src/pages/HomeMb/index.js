@@ -182,7 +182,7 @@ class HomeMb extends Component {
             {courseList.map((item) => {
                 return (
                     <div class = {"home-type-"+item.id+" home-type"}>
-                        <div class = "home-type-content" onClick={this.handleTypeClick.bind(this)} id = {item.id}>
+                        <div class = "home-type-content" id = {item.id}>
                             <div class = "type-cn">{item.name}</div>
                             <div class = "type-en">{item.description}</div>
                         </div>

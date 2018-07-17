@@ -67,7 +67,7 @@ let poolList = [{
     }
 }]
 
-class Course extends Component {
+class CourseMb extends Component {
     constructor(props) {
         super(props);
         this.props.query = this.props.location.query
@@ -77,11 +77,12 @@ class Course extends Component {
     }
 
     componentDidMount() {
+        //this.props.location.query
     }
 
   render () {
   	return (
-        <div id = "Course" class = "Course">
+        <div id = "CourseMb" class = "Course">
             <div id = "banner" class = "banner">
                 <div id = "bannerBg" class = "banner-bg">
                     <div id = "bannerLeft" class = "banner-left">
@@ -166,4 +167,4 @@ class Course extends Component {
   }
 }
 
-export default Course;
+export default CourseMb;

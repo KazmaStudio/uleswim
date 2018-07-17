@@ -6,11 +6,20 @@ import Home from '../Home';
 import HomeMb from '../HomeMb';
 import Recruiting from '../Recruiting';
 import Course from '../Course';
+import CourseMb from '../CourseMb';
 import {isPC} from '../../common/common.js';
 
 class Grid extends Component {
     constructor(props) {
         super(props);
+
+        document.addEventListener(
+            'touchmove',
+            function(e) {
+                e.preventDefault();
+            },
+            false
+        );
 
         this.state = {
 
@@ -31,7 +40,7 @@ class Grid extends Component {
                 <Switch>
                     <Route exact path='/' component={ isPC()?Home:HomeMb }/>
                     <Route path='/Recruiting' component={ Recruiting }/>
-                    <Route path='/Course' component={ Course }/>
+                    <Route path='/Course' component={ isPC()?Course:CourseMb }/>
                 </Switch>
             </div>
         </div>

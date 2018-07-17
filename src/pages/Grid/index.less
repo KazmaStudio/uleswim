@@ -3,17 +3,19 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     position: fixed;
 
     .grid-top{
-        height: 6rem;
+        height: 44px;
         width: 100%;
+        position: fixed;
     }
     .grid-pages{
         width: 100%;
-        position: relative;
         flex: 1;
-        overflow-y: auto;
         overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
