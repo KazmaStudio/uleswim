@@ -94,6 +94,7 @@ const config = {
         historyApiFallback: true,
         port: 10262,
         hot: true,
+        host: '0.0.0.0',
         compress: isProd,
         stats: { colors: true },
     }

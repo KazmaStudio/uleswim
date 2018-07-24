@@ -70,7 +70,30 @@ let poolList = [{
 class Course extends Component {
     constructor(props) {
         super(props);
-        this.props.query = this.props.location.query
+
+        if (this.props.location.query){
+
+            this.props.query = this.props.location.query;
+
+        }else{
+
+            this.props.query = {
+
+                courseName: "兴趣班",
+                courseType: "青少年",
+                feature: [
+                    {name: "上课时间灵活"},
+                    {name: "男女教练可选"},
+                    {name: "持证教练"},
+                    {name: "课程内容系统实用"},
+                    {name: "教练经验丰富"},
+                    {name: "1~3人小班"}
+                ]
+
+            }
+
+        }
+        
         this.state = {
             query: this.props.query
         };
